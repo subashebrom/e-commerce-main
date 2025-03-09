@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- === css link === -->
+    <link rel="stylesheet" href="/css/cart-product.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="ar-headerContainer">
+            <div class="ar-headerLogo">
+                <a href="index.html"><img src="/img/logo.jpg" alt="header-logo"></a>
+            </div>
+            <div class="ar-Search">
+                <input type="search" placeholder="search product......">
+                <div class="ar-search-icon"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
+            </div>
+
+            <div class="ar-contact">
+                <div class="contactPhone">
+                    <div class="ar-contactIcon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="ar-contact-container">
+                        <p>
+                            অর্ডার করতে কল করুন
+                        </p>
+                        <span> 0130000000</span>
+                    </div>
+                </div>
+                <div class="ar-cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div class="ar-cart">
+                    <a href="account-page.html"><i class="fa-solid fa-circle-user"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- === CART PRODUCTS === -->
+    <div class="sh-cart-parent-container">
+        <!-- === TOP ITEMS === -->
+        <div class="sh-cart-select-delete-box">
+            <label for="check"><input type="checkbox" value="select" name="all" id="check">Select all (1 Items)</label>
+            <label for="delete"><i class="fa-solid fa-trash" id="delte"></i>Delete</label>
+        </div>
+    </div>
+
+    <!-- === PRODUCT CONTAINER === -->
+    <div class="sh-product-cotainer">
+        <div class="sh-product-child-container">
+            <div class="sh-brand-name">
+                <input type="checkbox" name="" id="brandname">
+                <label for="brandname">Brand Name</label><!-- === Please include here by default brand name === -->
+            </div>
+            <div class="sh-cart-products">
+                <div class="sh-cart-product-details">
+                    <div class="sh-product-left-item">
+                        <input type="checkbox" name="" id="brandname">
+                        <div class="sh-cart-image-box"><img src="/img/trendy 05.jpg" alt=""></div>
+                        <p>Lavender Crystal Bead Drop Earrings -150</p>
+                    </div>
+                </div>
+                <div class="container-for-mobile">
+                    <div class="sh-cart-product-price">
+                        <p>৳ 550</p>
+                    </div>
+                    <div class="sh-qty-counter">
+                        <button class="sh-counter-btn-style sh-counter-btn-increment">-</button>
+                        <button class="sh-counter-btn-style sh-counter-result">1</button>
+                        <button class="sh-counter-btn-style sh-counter-btn-decrement">+</button>
+                    </div>
+                    <div class="sh-trash-icon-two"><i class="fa-solid fa-trash"></i></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- === ORDER SUMMARY === -->
+    <div class="sh-order-summary-container">
+        <div class="sh-summary-child-container">
+            <div class="sh-order-summary">
+                <h1>Order Summary</h1>
+            </div>
+            <div class="sh-sub-total">
+                <p>Subtotal (0 items)</p>
+                <span>৳ 0</span>
+            </div>
+            <div class="sh-sub-total">
+                <p>Shipping Fee (0 items)</p>
+                <span>৳ 0</span>
+            </div>
+            <div class="sh-sub-total">
+                <input type="text">
+                <button type="button" name="button">Apply</button>
+            </div>
+            <div class="sh-sub-total">
+                <p>Shipping Fee (0 items)</p>
+                <span>৳ 0</span>
+            </div>
+            <div class="sh-check-out-btn">
+                <button type="button" name="button">PROCEED TO CHECKOUT (0)</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer-bg">
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <p><a href="#">Our stores</a></p>
+                    <p>+391 (0315) 2558 4593</p>
+                    <p><a href="mailto:hello@domain.com">hello@domain.com</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Useful links</h3>
+                    <p><a href="#">New Products</a></p>
+                    <p><a href="#">Best Sellers</a></p>
+                    <p><a href="#">Bundle & Save</a></p>
+                    <p><a href="#">Online Gift Card</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Information</h3>
+                    <p><a href="#">Contact Us</a></p>
+                    <p><a href="#">Shipping FAQ</a></p>
+                    <p><a href="#">Terms</a></p>
+                    <p><a href="#">Privacy Policy</a></p>
+                </div>
+                <div class="sm-hide-for-mobile">
+                    <div class="footer-section">
+                        <h3>Good emails.</h3>
+                        <p>Enter your email below to be the first to know about new collections <br> and product
+                            launches.
+                        </p>
+                        <div class="sm-email-section">
+                            <form action="#" class="email-form">
+                                <input type="email" placeholder="Enter your email address" required>
+                            </form>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-left-text">
+                        <h3>
+                            © 2025 Oussama Anedam
+                        </h3>
+                    </div>
+                    <div class="footer-logo">
+                        <h1>
+                            Glowing
+                        </h1>
+                    </div>
+                    <div class="pay-logo">
+                        <img src="/img/pay.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- === FONT AWSOME LINK === -->
+    <script src="https://kit.fontawesome.com/aab4d24b6f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

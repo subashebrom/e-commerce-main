@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- === css link === -->
+    <link rel="stylesheet" href="css/acount-page.css">
+    <title>MY Account</title>
+</head>
+
+<body>
+    <header>
+        <div class="ar-headerContainer">
+            <div class="ar-headerLogo">
+                <a href="/index.html"><img src="/img/logo.jpg" alt="header-logo"></a>
+            </div>
+            <div class="ar-Search">
+                <input type="search" placeholder="search product......">
+                <div class="ar-search-icon"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
+            </div>
+
+            <div class="ar-contact">
+                <div class="contactPhone">
+                    <div class="ar-contactIcon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="ar-contact-container">
+                        <p>
+                            অর্ডার করতে কল করুন
+                        </p>
+                        <span>01300000000</span>
+                    </div>
+                </div>
+                <div class="ar-cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+    <div class="sh-account">
+        <!-- === ACCOUNT === -->
+        <div class="sh-account-section">
+            <!-- === ACCOUNT LEFT ITEMS === -->
+            <div class="sh-account-left-items">
+                <!-- === ACCOUNT PROFILE IMAGE === -->
+                <div class="sh-profile-image">
+                    <img src="img/person.jpg" alt="">
+                    <p>Subas Hebrom (Abir)</p>
+                </div>
+            </div>
+            <!-- === ACCOUNT RIGHT ITMES === -->
+            <div class="sh-account-right-items">
+            </div>
+        </div>
+    </div>
+    <div class="sh-account-second-section">
+        <div class="sh-acount-second-container">
+            <!-- === ACCOUNT PROFILE IMAGE === -->
+            <div class="sh-menu-item">
+                <ul>
+                    <li onclick="saveDetails()"><a href="#">My Account</a></li>
+                    <li onclick="showEditBox()"><a href="#">My Profile</a></li>
+                    <li onclick="showSignup()"><a href="#">Sign in</a></li>
+                    <li><a href="#">Log in</a></li>
+                    <li onclick="showOrderMenu()"><a href="#">My Orders</a></li>
+                </ul>
+            </div>
+            <div class="sh-editable-section">
+                <!-- === ACCOUNT SECOND RIGHT ITMES === -->
+                <div class="sh-second-account-right-items">
+                    <div class="sh-personal-edit-box">
+                        <h1>Personal Information</h1>
+                        <button onclick="showEditBox()" type="button" name="button"
+                            class="sh-btn-style sh-save-btn-edit"><i class="fa-solid fa-edit"></i></button>
+                    </div>
+                    <hr>
+                    <div class="sh-details-section">
+                        <!-- === NAME SECTION === -->
+                        <div class="sh-name-container">
+                            <p><b>Name</b></p>
+                            <p>Subas Hembrom</p>
+                        </div>
+                        <div class="sh-name-container">
+                            <p><b>Address</b></p>
+                            <p>Rangpur, Tajhat, UCEP Technical School
+                                Rangpur - Rangpur - Mordern</p>
+                        </div>
+                        <div class="sh-name-container">
+                            <p><b>G-mail</b></p>
+                            <p>subashebrom@gmail.com</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="sh-details-section">
+                        <!-- === NAME SECTION === -->
+                        <div class="sh-name-container">
+                            <p><b>Phone Number</b></p>
+                            <p>+880 01315-291293</p>
+                        </div>
+                        <div class="sh-name-container">
+                        </div>
+                        <div class="sh-name-container">
+                        </div>
+                    </div>
+                </div>
+                <!-- === ACCOUNT SECOND RIGHT ITMES === -->
+                <div class="sh-second-account-right-items-two">
+                    <div class="sh-personal-edit-box">
+                        <h1>Personal Information</h1>
+                        <button onclick="saveDetails()" type="button" name="button"
+                            class="sh-btn-style sh-save-btn-background">Save</button>
+                    </div>
+                    <hr>
+                    <div class="sh-details-section">
+                        <!-- === NAME SECTION === -->
+                        <div class="sh-name-container">
+                            <label for="text">Name</label>
+                            <input type="text" placeholder="Subas Hebrom" value="" name="" id="">
+                        </div>
+                        <div class="sh-name-container">
+                            <label for="text">Address</label>
+                            <input type="text" placeholder="Rangpur, Tajhat, UCEP Technical School
+                            Rangpur - Rangpur - Mordern" value="" name="" id="">
+                        </div>
+                        <div class="sh-name-container">
+                            <label for="text">Gmail</label>
+                            <input type="email" placeholder="suashebrom@gmail.com" value="" name="" id="">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="sh-details-section">
+                        <!-- === NAME SECTION === -->
+                        <div class="sh-name-container">
+                            <label for="text">Phone Number</label>
+                            <input type="text" placeholder="+880 1315-291293" value="" name="" id="">
+                        </div>
+                        <div class="sh-name-container">
+                        </div>
+                        <div class="sh-name-container">
+                        </div>
+                    </div>
+                </div>
+                <!-- === MY ORDER PAGE === -->
+                <div class="sh-order-account-right-items-two">
+                    <div class="sh-order-menu-items">
+                        <ul>
+                            <li onclick="showDitalsOrderedProducts()"><a href="#">My Orders</a></li>
+                            <li><a href="#">My Returns & Cancellations</a></li>
+                            <li onclick="showWishlist()"><a href="#">My Wishlist Stores</a></li>
+                            <li onclick="showReview()"><a href="#">My Reviews</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- === MY ORDER pages === -->
+                <div class="sh-ordered-details">
+                    <div class="sh-Myorder-account-right-items-two">
+                        <div class="sh-order-sub-items">
+                            <ul>
+                                <li><a href="#">All</a></li>
+                                <li><a href="#">To Pay</a></li>
+                                <li><a href="#">To Ship</a></li>
+                                <li><a href="#">To Receive</a></li>
+                            </ul>
+                            <div class="sh-hidefor-mobile">
+                                <ul>
+                                    <li>Show: <select name="" id="">
+                                            <option value="1" name="All Orders">All Orders</option>
+                                            <option value="1" name="All Orders">Please include date</option>
+                                            <!-- == PLEASE INCLUDE REAL TIME AND DATE === -->
+                                        </select></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- === ORDER PRODUCTS === -->
+                    <div class="sh-My-order-account-right-items-two">
+                        <div class="sh-order-product-name">
+                            <h3>Lavender Crystal</h3>
+                            <p>Completed</p>
+                        </div>
+                        <hr>
+                        <!-- === ORDERED PRODUCTS === -->
+                        <div class="sh-ordered-products">
+                            <table>
+                                <tr>
+                                    <td class="sh-ordered-image">
+                                        <img src="/img/trendy 05.jpg" alt="">
+                                    </td>
+                                    <td class="sh-ordered-product-name">
+                                        <p>Lavender Crystal Bead Drop Earrings -150</p>
+                                    </td>
+                                    <td class="sh-ordered-product-price">
+                                        <p>৳ 359</p>
+                                    </td>
+                                    <td class="sh-ordered-qty">
+                                        <p>Qty: 1</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- === MY WISHLIST PAGES  === -->
+                <div class="sh-wishlist-details">
+                    <div class="sh-Myorder-account-right-items-two">
+                        <div class="sh-order-sub-items">
+                            <ul>
+                                <li onclick="showWishlistTwo()"><a href="#">My Wishlist(1)</a></li>
+                                <li class="sh-past-purchase" onclick="showPastPurchase()"><a href="#">Past Purchase</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sh-wishlist-box">
+                        <!-- === ORDER PRODUCTS === -->
+                        <div class="sh-My-order-account-right-items-two">
+                            <div class="sh-order-product-name">
+                                <h3>Bd Fashion</h3><!-- === Include here by default brand name === -->
+                            </div>
+                            <hr>
+                            <!-- === ORDERED PRODUCTS === -->
+                            <div class="sh-ordered-products">
+                                <table>
+                                    <tr>
+                                        <td class="sh-ordered-image">
+                                            <img src="/img/trendy 05.jpg" alt="">
+                                        </td>
+                                        <td class="sh-ordered-product-name">
+                                            <p>Lavender Crystal Bead Drop Earrings -150</p>
+                                        </td>
+                                        <td class="sh-ordered-product-price">
+                                            <p>৳ 359</p>
+                                        </td>
+                                        <td class="sh-ordered-qty">
+                                            <button type="button" name="button" class="sh-wish-to-add-btn"><i
+                                                    class="fa-solid fa-cart-plus"></i></button>
+                                        </td>
+                                        <td class="sh-wish-trahs-icon"><i class="fa-solid fa-trash"></i></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- === MY PAST ORDERS === -->
+                <div class="sh-past-ordered-details">
+                    <!-- === ORDER PRODUCTS === -->
+                    <div class="sh-My-order-account-right-items-two">
+                        <div class="sh-order-product-name">
+                            <h3>Lavender Crystal</h3>
+                            <p>Purchased On</p>
+                        </div>
+                        <hr>
+                        <!-- === ORDERED PRODUCTS === -->
+                        <div class="sh-ordered-products">
+                            <table>
+                                <tr>
+                                    <td class="sh-ordered-image">
+                                        <img src="/img/trendy 05.jpg" alt="">
+                                    </td>
+                                    <td class="sh-ordered-product-name">
+                                        <p>Lavender Crystal Bead Drop Earrings -150</p>
+                                    </td>
+                                    <td class="sh-ordered-product-price">
+                                        <p>৳ 359</p>
+                                    </td>
+                                    <td class="sh-ordered-qty">
+                                        <p>Qty: 1</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- === MY REVIEWED === -->
+                <div class="sh-reviewed-details">
+                    <!-- === ORDER PRODUCTS === -->
+                    <div class="sh-My-order-account-right-items-two">
+                        <div class="sh-order-product-name">
+                            <h3>Lavender Crystal</h3>
+                            <p>Purchased On</p>
+                        </div>
+                        <hr>
+                        <!-- === ORDERED PRODUCTS === -->
+                        <div class="sh-ordered-products">
+                            <table>
+                                <tr>
+                                    <td class="sh-ordered-image">
+                                        <img src="/img/trendy 05.jpg" alt="">
+                                    </td>
+                                    <td class="sh-reviewd-product-name">
+                                        <p>Lavender Crystal Bead Drop Earrings -150</p>
+                                    </td>
+                                    <td class="sh-horizontal-line"></td>
+                                    <td class="sh-review-box">
+                                        <p>Sold by</p>
+                                        <button type="button" name="button" class="sh-review-btn">Review</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- === SING UP PAGE === -->
+    <div class="sh-sing-up-section">
+        <div class="sh-sign-up">
+            <ul>
+                <li>
+                    <h1>Sign up/Login</h1>
+                </li>
+                <li onclick="hideSignup()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+            </ul>
+        </div>
+        <hr>
+        <!-- === SIGN OR LOGIN INFO === -->
+        <div class="sh-sign-log-info">
+            <div class="sh-sl-details">
+                <label for="text">Name/E-mail</label>
+                <input type="text" placeholder="Number or Email" name="" id="">
+            </div>
+            <div class="sh-sl-details">
+                <label for="text">Password</label>
+                <input type="password" placeholder="xxxxxxxx" name="" id="">
+            </div>
+            <div class="sh-sl-details-policy">
+                <input type="checkbox">
+                <p>By creating and/or using your account, you agree to our Terms of Use and Privacy Policy.</p>
+            </div>
+            <div class="sh-sl-details-account">
+                <button onclick="showOtp()" type="button" name="button" class="sh-send-code">Send Via Code SMS</button>
+            </div>
+            <div class="sh-sl-details-account">
+                <p>Already have an account?<a onclick="showLoginPage()" href="#">Log in Now</a></p>
+            </div>
+            <div class="sh-sl-details-account">
+                <p><span>Or, sign up with</span></p>
+            </div>
+            <div class="sh-sl-details-google-facebook">
+                <ul>
+                    <li><i class="fa-brands fa-google"><a href="#">Google</a></i></li>
+                    <li><i class="fa-brands fa-facebook"><a href="#">Facebook</a></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- === OTP === -->
+    <div class="sh-otp-section">
+        <div class="sh-sign-up">
+            <ul>
+                <li>
+                    <h1>Sign up/Login</h1>
+                </li>
+                <li onclick="hideotp()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+            </ul>
+        </div>
+        <hr>
+        <!-- ==== OTP SECTION ==== -->
+        <div class="sh-otp-email-phone">
+            <i class="fa-solid fa-envelope"></i>
+            <p>Email or Phone Number</p>
+        </div>
+        <div class="sh-otp-text">
+            <p>OTP sent to your email. Please enter OTP bellow.</p>
+        </div>
+        <div class="sh-otp-number">
+            <input type="text" name="" id="">
+            <div class="sh-lock-icon">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+        </div>
+        <div class="sh-remember">
+            <div class="sh-remember-text">
+                <label for="remember"><input type="checkbox" name="otp" id="remember">Remember Me</label>
+                <p>Resend OTP</p>
+            </div>
+        </div>
+        <div class="sh-otp-login">
+            <button type="button" name="button">Log In</button>
+        </div>
+        <div class="sh-sl-details-google-facebook">
+            <ul>
+                <li><i class="fa-brands fa-google"><a href="#">Google</a></i></li>
+                <li><i class="fa-brands fa-facebook"><a href="#">Facebook</a></i></li>
+            </ul>
+        </div>
+        <div class="sh-margin"></div>
+    </div>
+    <!-- === SING UP PAGE === -->
+    <div class="sh-sing-up-log-section">
+        <div class="sh-sign-up">
+            <ul>
+                <li>
+                    <h1>Sign up/Login</h1>
+                </li>
+                <li onclick="hidelogin()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+            </ul>
+        </div>
+        <hr>
+        <!-- === SIGN OR LOGIN INFO === -->
+        <div class="sh-sign-log-info">
+            <div class="sh-sl-details">
+                <label for="text">Phone/E-mail</label>
+                <input type="text" placeholder="Enter your phone number or email" name="" id="">
+            </div>
+            <div class="sh-sl-details">
+                <label for="text">Password</label>
+                <input type="password" placeholder="xxxxxxxx" name="" id="">
+            </div>
+            <div class="sh-sl-details-forgot">
+                <p>Forgot Password</p>
+            </div>
+            <div class="sh-sl-details-account">
+                <button type="button" name="button" class="sh-send-code">LOG IN</button>
+            </div>
+            <div class="sh-sl-details-account">
+                <p>Don't have account? <a onclick="showsigUpPage()" href="#">Sign Up</a></p>
+            </div>
+            <div class="sh-sl-details-account">
+                <p><span>Or, sign up with</span></p>
+            </div>
+            <div class="sh-sl-details-google-facebook">
+                <ul>
+                    <li><i class="fa-brands fa-google"><a href="#">Google</a></i></li>
+                    <li><i class="fa-brands fa-facebook"><a href="#">Facebook</a></i></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer-bg">
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <p><a href="#">Our stores</a></p>
+                    <p>+391 (0315) 2558 4593</p>
+                    <p><a href="mailto:hello@domain.com">hello@domain.com</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Useful links</h3>
+                    <p><a href="#">New Products</a></p>
+                    <p><a href="#">Best Sellers</a></p>
+                    <p><a href="#">Bundle & Save</a></p>
+                    <p><a href="#">Online Gift Card</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Information</h3>
+                    <p><a href="#">Contact Us</a></p>
+                    <p><a href="#">Shipping FAQ</a></p>
+                    <p><a href="#">Terms</a></p>
+                    <p><a href="#">Privacy Policy</a></p>
+                </div>
+                <div class="sm-hide-for-mobile">
+                    <div class="footer-section">
+                        <h3>Good emails.</h3>
+                        <p>Enter your email below to be the first to know about new collections <br> and product
+                            launches.
+                        </p>
+                        <div class="sm-email-section">
+                            <form action="#" class="email-form">
+                                <input type="email" placeholder="Enter your email address" required>
+                            </form>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- === FONT AWSOME LINK === -->
+    <script src="https://kit.fontawesome.com/aab4d24b6f.js" crossorigin="anonymous"></script>
+
+
+
+    <!-- ==== js link === -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
