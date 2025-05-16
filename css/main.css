@@ -20,6 +20,7 @@ a {
 
 header {
     width: 100%;
+    height: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -35,10 +36,11 @@ header {
 }
 
 .ar-headerLogo a {
-    background: #aba8a8;
     display: flex;
     justify-content: start;
-    height: 70px;
+}
+.ar-headerLogo a img{
+    width: 300px;
 }
 
 /* ===input style=== */
@@ -110,6 +112,7 @@ header {
 
 .ar-contactIcon i {
     font-size: 20px;
+    color: #0D97BC;
 
 }
 
@@ -120,7 +123,7 @@ header {
 }
 
 .ar-contact-container span {
-    color: red;
+    color: #0D97BC;
     font-size: 17px;
     font-weight: 500;
 }
@@ -128,7 +131,7 @@ header {
 .ar-cart i {
     font-size: 26px;
     margin-left: 10px;
-    color: #463e3e;
+    color: #0D97BC;
 }
 
 /* === MOBILE RESPONSIVE === */
@@ -143,6 +146,7 @@ header {
 
     .ar-contactIcon i {
         display: none;
+        color: #0D97BC;
     }
 
     .ar-contact-container {
@@ -198,6 +202,12 @@ header {
     justify-content: center;
     border: 1px solid rgb(0, 0, 0, 0.1);
     background-color: white;
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+}
+.item:hover, .item a:hover{
+    background: #0D97BC;
+    color: white;
 }
 
 .item a {
@@ -255,11 +265,15 @@ header {
     align-items: center;
     justify-content: center;
     background-color: white;
-    border: 1px solid green;
+    border: 1px solid #0D97BC;
     border-radius: 5px;
-    color: green;
+    color: #0D97BC;
+    transition: ease-in-out 0.3s;
 }
-
+.sh-all-productAndSee-text-container a:hover{
+    background: #0D97BC;
+    color: white;
+}
 /* === MOBILE RESPONSIVE === */
 @media(max-width: 768px) {
     .sh-all-productAndSee-text-section {
@@ -336,7 +350,7 @@ header {
     border-radius: 50px;
     font-size: 16px;
     color: white;
-    background: #DC3545;
+    background: #21CED6;
     margin: 10px;
 }
 
@@ -376,7 +390,7 @@ header {
 /* === SH LESS PRICE === */
 .sh-less-price p {
     font-size: 15px;
-    color: #DC3545;
+    color: black;
 }
 
 /* === SH REGULAR PRICE === */
@@ -419,21 +433,21 @@ header {
 .sh-btn-cartbg {
     border-radius: 0 0 0 10px;
     transition: all 0.3s ease-in-out;
-    background: #FFBF00;
+    background: #0D97BC;
 }
 
 .sh-btn-cartbg:hover {
-    background: #e7ae04;
+    background: #0AA5C9;
 }
 
 .sh-btn-orderbg {
     border-radius: 0 0 10px 0;
     transition: all 0.3s ease-in-out;
-    background: #FF7F50;
+    background: #0C7BC6;
 }
 
 .sh-btn-orderbg:hover {
-    background: #f3632e;
+    background: #056EA8;
 }
 
 .sh-order-korun-button a {
@@ -472,7 +486,7 @@ header {
 .sh-btn-cartbg:hover::before {
     position: absolute;
     content: "Add to Cart";
-    background-color: #34495e;
+    background-color: #21CED6;
     visibility: visible;
     color: white;
     padding: 6px 12px;
