@@ -22,9 +22,12 @@ header {
     width: 100%;
     height: 80px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.125);
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
 }
 
 .ar-headerContainer {
@@ -33,6 +36,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0 20px 0;
+    justify-content: center;
 }
 
 .ar-headerLogo a {
@@ -521,9 +525,8 @@ header {
     margin-bottom: 5px;
 }
 
-.footer-logo h1 {
-    font-family: "Urbanist", serif;
-    font-size: 40px;
+.footer-logo img {
+    width: 200px;
 }
 
 .footer-bg {
